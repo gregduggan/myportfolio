@@ -56,9 +56,9 @@
 					<div class="col-md-12">
 						<ul>
 							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="skills.html">Skills</a></li>
+							<!-- <li><a href="skills.html">Skills</a></li> -->
 							<li><a href="projects.html">Projects</a></li>
-							<li><a href="about.html">About</a></li>
+							<!-- <li><a href="about.html">About</a></li> -->
 						</ul>
 					</div>
 				</div>
@@ -87,28 +87,62 @@
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
 						<span>Projects</span>
-						<h2>Portfolio Website</h2>
+						<h2>Sign Language Recognition ML</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="rotate">
-							<h2 class="heading">Portfolio Website Development</h2>
+							<h2 class="heading">Projects</h2>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="projectwebapp.html" class="work-img" style="background-image: url(images/work-1.jpg);">
+							<a href="projects.html" class="work-img" style="background-image: url(images/projectSignML.png);">
 							</a>
 							<div class="col-md-8 col-md-offset-2">
 								<div class="desc">
-									<p>The objective of my portfolio web application project was to offer potential employers a comprehensive overview of my skills and expertise, showcasing real-world examples of projects I’ve completed. Emphasizing simplicity, responsiveness, and cost-effectiveness were key principles guiding the development process.</p>
-									<p>Central to the project's execution was the adoption of a minimalist yet highly responsive design, facilitating quick development without compromising on visual appeal or functionality. To realize this vision, I opted for a freely available HTML/CSS template, which served as the foundation for the portfolio's layout and structure. This template underwent thorough customization to align with my personal branding and professional requirements.</p>
-									<p>In terms of deployment, the portfolio website was hosted statically on GitHub Pages, ensuring seamless accessibility and reliability. This choice not only minimized hosting costs but also provided a robust platform for continuous updates and enhancements.</p>
-									<p>By leveraging these strategic approaches, the resulting portfolio website successfully achieved its primary objectives of presenting my skills effectively to potential employers while adhering to the principles of simplicity, responsiveness, and cost-effectiveness.</p>
-									<p class="read"><a href="#">Live Preview</a></p>
+									<h2>Hand Gesture Recognition with Fine-Tuned Residual Neural Network</h2>
+									<h3>Introduction</h3>
+									<p>In a collaborative effort to improve communication for the deaf community, this project aims to evaluate various methods for hand gesture recognition using machine learning (ML) techniques. Sign language serves as a vital means of communication for the deaf, yet it remains a challenge for those unfamiliar with it. Automatic sign language recognition, powered by ML models, can potentially bridge this communication gap by enabling fast and accurate translation of hand signals into understandable language.</p>
+									<h3>My Contribution:</h3>
+									<p>Within this group project, my focus was on exploring the effectiveness of a fine-tuned Residual Neural Network (ResNet) architecture for hand gesture recognition. This involved adapting a ResNet50V2 model to the task at hand, comparing its performance with a pre-trained VGG16 model, and assessing the impact of fine-tuning on model accuracy and efficiency.</p>
+									<h3>Methodology:</h3>
+									<ol>
+										<li>Image Pre-processing:
+											<ol>
+											  <li>Prior to model training, a crucial step involved image pre-processing and data augmentation. Given the dataset's characteristics (28x28 grayscale images), up-sampling and resizing were performed to meet the input requirements of the ResNet50V2 model.</li>
+											</ol>
+										</li>
+										<li>Model Architecture:
+											<ol>
+											  <li>The ResNet50V2 model, pre-trained on the ImageNet dataset, was fine-tuned for the hand gesture recognition task. This involved modifying the final layers of the network to adapt it to our specific classification task.</li>
+											</ol>
+										</li>
+									</ol>
+									<h3>Evaluation and Discussion:</h3>
+									<ol>
+										<li>Model Performance:
+											<ol>
+											  <li>The fine-tuned ResNet50V2 achieved promising results, with an accuracy of 98.581% on the testing set and an F1-score of 0.97. These metrics were compared to those obtained from a fine-tuned VGG16 model (96%) and a ResNet trained from scratch, showcasing the efficacy of fine-tuning in improving performance.</li>
+											</ol>
+										</li>
+										<li>Runtime Efficiency:
+											<ol>
+											  <li>The model training and evaluation processes were conducted efficiently, leveraging Google Colab's GPU capabilities to expedite computation time.</li>
+											</ol>
+										</li>
+										<li>Challenges and Future Directions:
+											<ol>
+											  <li>Despite the overall success of the fine-tuned ResNet50V2 model, some challenges were identified, particularly in distinguishing subtle differences between similar hand gestures. Future iterations of the project could explore techniques to enhance the model's sensitivity to such nuances.</li>
+											</ol>
+										</li>
+									</ol>
+									<h3>Conclusion:</h3>
+									<p>Through meticulous experimentation and evaluation, the fine-tuned ResNet50V2 model emerged as a promising candidate for hand gesture recognition, demonstrating its potential to facilitate seamless communication for the deaf community. Further refinement and optimization of the model hold promise for even greater accuracy and efficiency in real-world applications.</p>
+									<p>Because this is a University project the project code must remain in a private repository. But I can share a link upon request.</p>
 								</div>
 							</div>
 						</div>
